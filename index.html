@@ -1,46 +1,37 @@
-<html><head>
-<style>
-body {
-  height: 100%;
-}
-
-.parent {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.verticalhorizontal {
-    display: table-cell;
-    height: 750px;
-    text-align: center;
-    width: 1500px;
-    vertical-align: middle;
-}
-
-.alltext
-            {
-                font-family:    Arial
-                font-size:      30px;
-		color:		black;
-		text-align: center;
-		width: 600px;
-            }
-
-</style>
-
-   
-      <title>max(random)</title>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+	<style>
+		table {
+		  margin: 0 auto;
+		  text-align: center;
+		  border-collapse: collapse;
+		  border: 1px solid #d4d4d4;
+		  height: 500px; 
+		}
+		 
+		tr:nth-child(even) {
+		  background: #d4d4d4;
+		}
+		 
+		th, td {
+		  padding: 10px 30px;
+		}
+		 
+		th {
+		  border-bottom: 1px solid #d4d4d4;
+		}
+	</style>
 </head>
-   <body style="background-color:white;">
-	<div class="verticalhorizontal">
-		<img src="maxrandom3.JPG" alt="max(random)" width="800">
-		<br><br><br><br><br>
-<span style="font-family:verdana;font-size:10px;color:white;background-color:black;">copyright &#169; 2021 maxrandom llc</span>
-<span style="font-family:verdana;font-size:10px;color:grey;background-color:white;">email: rg[at]maxrandom.us</span>
-	</div>
-   
+<body>
 
+<script src="CsvToTable.js"></script>
+<script>
+	var csvtotable = new CsvToTable({
+		csvFile: 'data_out.csv'
+	});
+	csvtotable.run();
+</script>
 </body>
 </html>
